@@ -1,0 +1,10 @@
+elevenlabs>=2.74.1
+websockets>=17.3
+sounddevice>=0.5.6
+numpy>=2.5.4
+python-dotenv>=1.2.4
+# webrtcvad (original) fails to import on Python 3.12 (needs pkg_resources); wheels fork is a drop-in.
+webrtcvad-wheels>=2.0.14
+pytest>=9.2.0
+certifi>=2024.0  # CA bundle for wss:// (python.org macOS builds ship no CA certs)
+PyQt6>=6.12.0  # GUI (python -m gui)
